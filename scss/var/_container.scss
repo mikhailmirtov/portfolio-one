@@ -1,0 +1,27 @@
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.main {
+    flex: 1 1 auto;
+}
+[class*="__container"] {
+    max-width: 1310px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+$colorTitle: #FFFFFF;
+$colorText: #9C9C9C;
+$colorBtn: #FFFFFF;
+$BgColorBtn: #3D96F4;
+$BgColorBtnHover: #135ba8;
+$BgColorBtnBlack:rgba(129, 129, 139, 0.2);
+$BgColorBtnBlackHover: rgb(71, 71, 75);
+$columnBgColor: #1E1E1E;
+$sectionLinkColor: #9C9C9C;
+$sectionLinkColorHover: #ffffff;
+$itemBgColor: rgba(129, 129, 139, 0.1);
+$itemTitle: #FFFFFF;
+$itemText: #9C9C9C;

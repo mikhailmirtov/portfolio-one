@@ -1,0 +1,121 @@
+.main__content {
+    &:not(:last-child) {
+        margin-bottom: 64px;
+    }
+
+    @media (min-width: 1024px) {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+    }
+}
+
+.main__block {
+    flex: 0 1 65%;
+
+    @media (max-width: 1023.98px) {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+}
+.main__link {
+    max-width: max-content;
+    border: 1px solid rgba(129, 129, 139, 0.2);
+    border-radius: 12px;
+    padding: 7px 15px;
+    font-weight: 300;
+    font-size: 7px;
+    line-height: 1.6;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 250ms ease;
+    color: $sectionLinkColor;
+
+    &:not(:last-child) {
+        margin-bottom: 19px;
+    }
+
+    &:hover {
+        border: 1px solid rgb(221, 220, 220);
+        color: $sectionLinkColorHover;
+    }
+
+    @media (min-width: 768px) {
+        font-size: 9px;
+        padding: 9px 17px;
+    }
+
+    @media (min-width: 1024px) {
+        font-size: 11px;
+        padding: 11px 19px;
+    }
+}
+
+.main__title {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 1.2;
+    color: $colorTitle;
+
+    &:not(:last-child) {
+        margin-bottom: 12px;
+    }
+
+    @media (min-width: 768px) {
+        font-size: 40px;
+    }
+
+    @media (min-width: 1024px) {
+        font-size: 50px;
+    }
+}
+
+.main__text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.5;
+    color: $colorText;
+
+    &:not(:last-child) {
+        margin-bottom: 33px;
+    }
+
+    @media (min-width: 768px) {
+        font-size: 16px;
+    }
+
+    @media (min-width: 1024px) {
+        font-size: 18px;
+    }
+}
+
+.main__btn {
+    max-width: max-content;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 1.6;
+    letter-spacing: 2px;
+    background-color: $BgColorBtn;
+    color: $colorBtn;
+    transition: background-color 250ms ease;
+    &:hover {
+        background-color: $BgColorBtnHover;
+    }
+    @media (max-width: 450px) {
+        max-width: 100%;
+        text-align: center;
+    }
+    @media (min-width: 768px) {
+        padding: 12px 28px;
+        font-size: 12px;
+    }
+    @media (min-width: 1024px) {
+        padding: 16px 32px;
+        font-size: 14px;
+    }
+}

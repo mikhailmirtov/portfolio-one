@@ -1,0 +1,103 @@
+.testimonials__container{
+    padding-top: 36px;
+    padding-bottom: 36px;
+        
+    @media (min-width: 768px) {
+        padding-top: 66px;
+        padding-bottom: 66px;
+    }
+        
+    @media (min-width: 1024px) {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+}
+.testimonials__list{
+    @media (min-width: 1150px){
+        display: flex;
+        align-items: center;
+        column-gap: 48px;
+    }
+}
+.testimonials__item{
+    padding: 64px 40px;
+    background-color: $itemBgColor;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    flex: 1;
+    @media (max-width: 1149.98px) {
+        &:not(:last-child) {
+            margin-bottom: 48px;
+        }
+    }
+    @media (max-width: 767.98px) {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+}
+.item__label{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.item__icon{
+    flex: 0 0 68px;
+    overflow: hidden;
+    img{
+        max-width: 100%;
+        transform: scale(1.05);
+    }
+}
+.item__icon-one{
+    border-radius: 0 50% 50% 50%;
+}
+.item__icon-two{
+    border-radius: 50% 0% 50% 50%;
+}
+.item__icon-three{
+    border-radius: 50% 50% 0% 50%;
+}
+.item__people{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5; /* 24/16 */
+    color: $itemTitle;
+    &:not(:last-child){
+        margin-bottom: 7px;
+    }
+}
+.item__company{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.6;
+    color: $itemText;
+}
+.item__title{
+    flex: 1;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    color: $itemTitle;
+    @media (min-width: 768px){
+        font-size: 25px;
+    }
+        @media (min-width: 1150px) {
+            font-size: 32px;
+        }
+}
+.item__text{
+    flex: 1;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.5;
+    color: $itemText;
+    @media (min-width: 768px) {
+        font-size: 14px;
+    }
+    @media (min-width: 1150px) {
+        font-size: 16px;
+    }
+}

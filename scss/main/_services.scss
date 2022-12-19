@@ -1,0 +1,117 @@
+.services__container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    @media (min-width: 768px){
+        row-gap: 40px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @media (min-width: 1024px){
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        row-gap: 50px;
+        column-gap: 104px;
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+}
+.services__list{
+    @media (min-width: 550px) {
+        display: flex;
+        gap: 32px;
+    }
+}
+.services__column{
+    @media (min-width: 550px) {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        &:first-child{
+            padding-top: 48px;
+        }
+        &:last-child{
+            padding-bottom: 48px;
+        }
+    }
+    @media (max-width: 549.98px) {
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.services__item{
+    background-color: $itemBgColor;
+    border-radius: 30px;
+    padding: 25px 15px 31px 15px;
+    @media (max-width: 549.98px){
+        &:not(:last-child){
+            margin-bottom: 15px;
+        }
+    }
+    @media (min-width: 550px) {
+        padding: 35px 15px 45px 15px;
+    }
+    @media (min-width: 768px) {
+        padding: 45px 20px 55px 20px;
+    }
+    @media (min-width: 1024px) {
+        padding: 55px 25px 61px 25px;
+    }
+}
+.services__icon{
+    img{
+    width: 46px;
+        height: 46px;
+    @media (min-width: 550px) {
+        width: 56px;
+        height: 56px;
+    }
+        
+    @media (min-width: 768px) {
+        width: 66px;
+            height: 66px;
+    }
+        
+    @media (min-width: 1024px) {
+        width: 76px;
+            height: 76px;
+    }
+}
+&:not(:last-child){
+    margin-bottom: 16px;
+}
+}
+.services__item-title{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.5; /* 27/18 */
+    color: $itemTitle;
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    @media (min-width: 768px) {
+        font-size: 15px;
+    }
+        
+    @media (min-width: 1024px) {
+        font-size: 19px;
+    }
+}
+.services__item-text{
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 1.5;
+    color: $itemText;
+    @media (min-width: 768px) {
+        font-size: 13px;
+    }
+        
+    @media (min-width: 1024px) {
+        font-size: 16px;
+    }
+}
